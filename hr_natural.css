@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*
+	Luv4C natural page
+	Author: Michelle Ogedegbe
+	Date: 07/20/24
+*/
+
+/* body */
+body {
+	padding-top: 60px;
+	background: #F3E8EA;
+}
+
+/* section */
+#moisture > #first {
+	text-align: center;
+	background: linen;
+	height: 60px;
+	padding-top: 20px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	color: #C6AEC7;
+	text-shadow: linen 1px 1px 5px;
+	font-size: 1.5em;
+}
+
+#firstbox {
+	clear: left;
+	float: left;
+	width: 30%;
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	margin: 10px 20px 30px;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 10px;
+}
+
+#secondbox {
+	float: left;
+	width: 30%;
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	margin: 10px 0 20px;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#washday {
+	float: left;
+	width: 30%;
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	margin: 10px 20px 0;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+}
+#firstbox h1, #secondbox h1, #washday h1 {
+	text-align: center;
+	background: #C6AEC7;
+	padding: 10px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-weight: normal;
+	color: snow;
+	font-size: 1.25em;
+	border-radius: 5px;
+}
+
+dt, dd {
+	padding: 5px 0;
+}
+
+#schedule h2, #intro h2{
+	clear: both;
+	text-align: center;
+	background: linen;
+	height: 60px;
+	padding-top: 20px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	color: #C6AEC7;
+	text-shadow: linen 1px 1px 5px;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#intro p {
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* table */
+table {
+	background: snow;
+	border: 10px double #C6AEC7;
+	font-size: 1.2em;
+	margin: 20px auto 0;
+	width: 90%;
+	border-radius: 10px;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	border: 3px solid #9E869F;
+	border-spacing: 10px;
+	padding: 5px;
+}
+
+tr th {
+	border-top: 0;
+    border-bottom: 1px solid #FFEAFF; 
+    border-right: 3px solid #9E869F;
+    border-left: 0;
+    background: #F8E0F9;
+    color: #584059;
+    font-family: 'American Typewriter', Baskerville, sans-serif;
+}
+
+tr td {
+	color: #806881;
+	font-family: 'Montserrat', sans-serif;
+}
+
+caption {
+	caption-side: bottom;
+	text-align: right;
+	color: #9E8592;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-style: italic;
+	
+}
+
+tfoot {
+	text-align: right;
+	font-size: 12pt;
+	font-style: oblique;
+}
+
+/* iframe */
+#youtube {
+	width: 100%;
+}
+#video1, #video3 {
+	clear: both;
+	float: left;
+	margin-left: 300px;
+	border-radius: 30px;
+}
+
+#video2, #video4 {
+	float: left;
+	border-radius: 30px;
+}
+
+#video3, #video4 {
+	margin-bottom: 20px;
+}
+/* footer */
+footer {
+	clear: both;
+	text-align: center;
+	background: linen;
+	height: 50px;
+	padding-top: 20px;
+	color: gray;
+}
+
+#num {
+	color: gray;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 425px) {
+	
+	table {
+        display: table;
+        width: 95%;
+        margin: 0 auto;
+        overflow-x: auto;
+        display: block;
+    }
+    
+	#firstbox, #secondbox, #washday {
+		display: block;
+		width: 95%;
+		margin: 30px 20px;
+	}
+	
+	#moisture > #first, #schedule h2, #intro h2, #intro p, footer {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+	#intro p {
+		margin: 30px auto;
+	}
+	
+	#intro h2 {
+		width: 100%;
+		margin-right: 0;
+		padding-bottom: 80px;
+		box-sizing: border-box;
+	}
+	
+    #youtube, #video1, #video2, #video3, #video4 {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+}	

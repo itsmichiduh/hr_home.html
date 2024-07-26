@@ -1,0 +1,158 @@
+@charset "utf-8";
+/*
+	Luv4C contact page
+	Author: Michelle Ogedegbe
+	Date: 07/24/24
+*/
+
+/* body */
+body {
+	padding-top: 60px;
+	background: white;
+}
+
+/* div */
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width: 100%;
+	background:#F3E8EA center/cover no-repeat;
+	height: 400px;
+	flex-direction: column;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	color: #584059;
+	text-shadow: linen 1px 1px 5px;
+	font-size: 1.5em;
+}
+
+.contact h1 {
+	font-size: 2em;
+}
+
+.contact p {
+	margin: 0 20px;
+	padding-top: 30px;
+}
+
+#tel, #email {
+	color: #584059;
+}
+
+/* form */
+#newsletter {
+	clear: left;
+}
+
+form {
+	float: left;
+	width: 45%;
+	margin: 0 10px;
+}
+
+#survey fieldset, #newsletter fieldset {
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 20px;
+}
+
+#survey fieldset {
+	margin: 20px 100px;
+}
+
+#newsletter fieldset {
+	margin: 20px 0 20px 200px;
+}
+
+.newsletter h1 {
+	text-align: center;
+	background: #C6AEC7;
+	padding: 10px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-weight: normal;
+	color: snow;
+	font-size: 1.25em;
+}
+
+#formRow {
+	color: #806881;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+}
+
+#formRow label {
+	margin-right: 10px;
+	line-height: 20px;
+}
+
+/* Legend Styles */
+legend {
+	background: #F8E0F9;
+    color: #584059;
+    font-family: 'American Typewriter', Baskerville, sans-serif;
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Text Area Styles */
+textarea {
+	height: 200px;
+	width: 95%;
+}
+
+/* button */
+button {
+	margin-top: 20px;
+	margin-right: 10px;
+	color: white;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-style: italic;
+	background: #C6AEC7;
+	border-radius: 5px;
+}
+
+/* Validation */
+#firstname:focus:invalid, #lastname:focus:invalid, #email:focus:invalid, #phone:focus:invalid {
+	background-color: rgba(194, 30, 86, 0.3);
+}
+
+#firstname:focus:valid, #lastname:focus:valid, #email:focus:valid, #phone:focus:valid {
+	background-color: rgba(29, 194, 139, 0.3);
+}
+
+/* footer */
+footer {
+	clear: both;
+	text-align: center;
+	background: linen;
+	height: 50px;
+	padding-top: 20px;
+	color: gray;
+}
+
+#num {
+	color: gray;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 425px) {
+	#newsletter, #survey {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	form {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#survey fieldset, #newsletter fieldset {
+		margin: 20px auto;
+		width: 95%;
+	}
+}

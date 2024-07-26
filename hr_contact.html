@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Luv4C contact page
+      Author: Michelle Ogedegbe
+      Date:   07/21/24
+
+      Filename:   hr_contact.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="keywords" content="4c, hair, haircare, contact, hairstyles " />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Luv4C</title>
+   <link href="hr_reset.css" rel="stylesheet" />
+   <link href="hr_header.css" rel="stylesheet" />
+   <link href="hr_contact.css" rel="stylesheet" />
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+</head>
+
+<body>
+	<header>
+		<h1>Luv4C</h1>
+		<nav class="topbar">
+			<ul>
+				<li><a href="hr_home.html">Home</a></li>
+				<li><a href="hr_protective.html">Protective</a></li>
+				<li><a href="hr_natural.html">Natural</a></li>
+				<li id="highlight"><a href="hr_contact.html">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="contact">
+		<h1>Hello!!!</h1>
+		<p>If you have any lingering questions or would like to get in contact you can give
+		us a call at <a href="tel:+1234567890" id="tel">+123-456-67890</a> or email us
+		at <a href="mailto:luv4C@gmail.com" id="email">Luv4C@gmail.com</a></p>
+	</div>
+	<div class="newsletter">
+		<h1>If you would like to receive newsletters fill out the form below</h1>
+		<form id="newsletter" action="https://luv4C.com/contactus/newletter" method="post">
+			<fieldset id="Info">
+				<legend>Personal Information</legend>
+				<div id="formRow">
+					<label for="firstname">First Name</label>
+					<input name="fName" id="firstname" type="text" placeholder="first Name" required />
+				</div>
+				<div id="formRow">
+					<label for="lastname">Last Name</label>
+					<input name="lName" id="lastname" type="text" placeholder="last Name" required/>
+				</div>
+				<div id="formRow">
+					<label for="address">Home Address</label>
+					<input name="hAddress" id="address" type="text" placeholder="address" required/>
+				</div>
+				<div id="formRow">
+					<label for="city">City</label>
+					<input name="cityInfo" id="city" type="text" placeholder="city" required />
+				</div>
+				<div id="formRow">
+					<label for="state">State</label>
+					<input name="stateInfo" id="state" type="text" placeholder="state" maxlength="2" required list="stateOptions" />
+				</div>
+				<div id="formRow">
+					<label for="zip">Zip Code</label>
+					<input name="zipInfo" id="zip" type="text" placeholder="zip" maxlength="5" required />
+				</div>
+				<div id="formRow">
+					<label for="phone">Phone Number</label>
+					<input name="phoneNum" id="phone" type="tel" placeholder="phone number" maxlength="10" required />
+				</div>
+				<div id="formRow">
+					<label for="email">Email</label>
+					<input name="emailInfo" id="email" type="email" placeholder="email" required />
+				</div>
+				<div id="formRow">
+					<label>Would you like for us to send newsletters to your email or home address<br/></label>
+				</div>
+				<div id="formRow">
+					<label>Email<input name="mailOption" value="Email" type="radio" /></label>
+					<label>Home Address<input name="mailOption" value="Home Address" type="radio" /></label>
+				</div>
+				<div id="formRow">
+				<button type="submit">Submit</button>
+				<button type="reset">Clear</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="survey">
+		<form id="survey" action="https://luv4C.com/contactus/survey" method="post">
+			<fieldset id="Suggestion">
+				<legend>Do you have any suggestions for improvement? leave them below</legend>
+				<textarea name="survey" id="sInfo"></textarea>
+				<button type="submit">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+<footer>
+	<address>
+	Luv4C &#8226; 123 Sesame Street &#8226; Atlanta, North Carolina &nbsp; 30106 &#8226; <a href="tel:+1234567890" id="num">123.456.7890</a>
+	</address>
+</footer>
+</html>

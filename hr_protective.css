@@ -1,0 +1,174 @@
+@charset "utf-8";
+/*
+	Luv4C protective page
+	Author: Michelle Ogedegbe
+	Date: 07/24/24
+*/
+
+/* body */
+body {
+	padding-top: 60px;
+	background: #F3E8EA;
+	display: grid;
+}
+
+/* article */
+#start {
+	text-align: center;
+	background: linen;
+	height: 60px;
+	padding-top: 20px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	color: #C6AEC7;
+	text-shadow: linen 1px 1px 5px;
+	font-size: 1.5em;
+}
+
+/* section */
+section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 85%;
+	margin: 0 auto;
+	box-shadow: 0 3px 10px #C38EC7;
+	margin-bottom: 30px;
+	border-radius: 30px;
+	background: floralwhite;
+}
+
+section h1 {
+	text-align: center;
+	background: #C6AEC7;
+	padding: 10px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-weight: normal;
+	color: snow;
+	font-size: 1.25em;
+}
+
+#nat {
+	border-top-left-radius: 25px;
+}
+
+#add {
+	border-top-right-radius: 25px;
+}
+
+section > * {
+	border: 3px outset #9E869F;
+}
+
+#natural6, #natural6 figcaption {
+	border-bottom-left-radius: 30px;
+}
+
+#added6, #added6 figcaption {
+	border-bottom-right-radius: 30px;
+}
+
+img {
+	width: 400px;
+	height: 400px;
+	margin-left: 100px;
+	padding: 10px 0;
+	border-radius: 20px;
+}
+
+#intro {
+	width: 90%;
+	padding:1.5em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 10px;
+	margin: 30px 0 40px 60px; 
+	color: #806881;
+}
+
+#webpage {
+	color: #806881;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+/* figure */
+
+#natural img {
+	display: block;
+	width: 100%;
+}
+
+#natural1 {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+#natural2 {
+	grid-row: 3;
+	grid-column: 1;
+}
+
+#natural3 {
+	grid-row: 4;
+	grid-column: 1;
+}
+
+#natural4 {
+	grid-row: 5;
+	grid-column: 1;
+}
+
+#natural5 {
+	grid-row: 6;
+	grid-column: 1;
+}
+
+#natural6 {
+	grid-row: 7;
+	grid-column: 1;
+}
+
+figcaption {
+	text-align: center;
+	color: white;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-style: italic;
+	padding: 15px 0;
+	background: #9E8592;
+}
+
+/* footer */
+footer {
+	clear: both;
+	text-align: center;
+	background: linen;
+	height: 50px;
+	padding-top: 20px;
+	color: gray;
+}
+
+#num {
+	color: gray;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 425px) {
+	section {
+		width: 95%;
+		margin-left: 40px;
+		margin-right: 20px;
+		overflow-x: hidden;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 30px 15px;
+	}
+	
+	#add { 
+		margin-top: 30px;
+	}
+	
+	#intro {
+		margin-left: 30px;
+	}
+}

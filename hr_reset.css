@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*
+	Luv4C reset
+	Author: Michelle Ogedegbe
+	Date: 07/20/24
+*/
+
+article, section, footer, nav {
+	display: block;
+}
+
+header, nav.topbar ul {
+	display: flex;
+}
+
+article, h1, h2, figure, figure caption, body, img, ul, li, nav, section, div, address, em, html {
+	background: transparent;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+#topbar ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1.25;
+	width: 100%;
+}

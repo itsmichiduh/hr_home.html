@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/*
+	Luv4C home page
+	Author: Michelle Ogedegbe
+	Date: 07/20/24
+*/
+
+/* article */
+article > h1 {
+	text-align: center;
+}
+
+/* section */
+section#beginning {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin-top: 50px;
+	width: 100%;
+	background: #F3E8EA center/cover no-repeat;
+	height: 400px;
+	color: white;
+	flex-direction: column;
+}
+
+#middle img {
+	float: left;
+	width: 25%;
+	height: 350px;
+}
+
+#middle h1 {
+	clear: both;
+}
+
+section#beginning h1 {
+    margin: 0 0 20px 0;
+    font-family: 'American Typewriter', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-shadow: grey 1px 1px 5px;
+}
+
+section#beginning p {
+    margin: 10px 0; 
+    font-size: 24px;
+    font-family: 'American Typewriter', Baskerville, sans-serif;
+    color: linen;
+    text-shadow: grey 1px 1px 5px;
+}
+
+#start {
+	text-align: center;
+	background: linen;
+	height: 60px;
+	padding-top: 20px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	color: #C6AEC7;
+	text-shadow: linen 1px 1px 5px;
+	font-size: 1.5em;
+}
+
+#section1 {
+	clear: left;
+	float: left;
+	width: 48%;
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	margin: 10px 20px 0;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#section2 {
+	float: left;
+	width: 48%;
+	padding: 3em;
+	background: floralwhite;
+	border: #F3E8EA solid 3px;
+	border-radius: 10px;
+	margin: 10px 0 20px;
+	box-shadow: 0 3px 10px #C38EC7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#section1 h1, #section2 h1 {
+	text-align: center;
+	background: #C6AEC7;
+	padding: 5px;
+	font-family: 'American Typewriter', Baskerville, sans-serif;
+	font-weight: normal;
+	color: snow;
+	font-size: 1.25em;
+	border-radius: 5px;
+}
+
+#section1 ul li {
+	list-style: none;
+}
+
+/* footer */
+footer {
+	clear: both;
+	text-align: center;
+	background: linen;
+	height: 50px;
+	padding-top: 20px;
+	color: gray;
+}
+
+#num {
+	color: gray;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 425px) {
+	section#beginning h1 {
+		margin: 0 10px;
+	}
+	
+	#section1, #section2 {
+		display: block;
+		width: 70%;
+		margin: 30px 0 30px 95px;
+	}
+	
+	body {
+	overflow-x: hidden;
+	}
+}
